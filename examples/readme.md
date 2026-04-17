@@ -9,7 +9,13 @@ This folder contains simple VBA examples for using TaniDLL.
 * `SerialTest.bas` → Basic send/receive example
 
 ---
+## 🎯 Target Users
 
+- Excel VBA users
+- Arduino / ESP32 hobbyists
+- Engineers testing serial devices
+
+---
 ## 🚀 How to Use
 
 ### 1. Import Files
