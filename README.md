@@ -128,6 +128,11 @@ Copy the DLL to the Windows system folder:
 
 ### 4. Activate License（First time only）
 
+⚠️ **Internet connection is required for license activation.**  
+License verification is performed via a remote server.
+
+After successful activation, the license is stored locally.  
+You do not need to activate it every time.
 ```vba
 Sub Test_License()
     Dim ret As Long
