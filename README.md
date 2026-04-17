@@ -110,6 +110,7 @@ Import:
 ---
 
 ## 🚀 Quick Example
+This example sends "HELLO" and receives a response from the device.
 
 ```vba id="ywnjgi"
 Sub TestSerial()
