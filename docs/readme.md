@@ -2,4 +2,4 @@
 
 Full API reference is available here:
 
-👉 [TaniDLL API Reference (PDF)](docs/TANI_DLL_specification_en.pdf)
+👉 [TaniDLL API Reference (PDF)](TANI_DLL_specification_en.pdf)
