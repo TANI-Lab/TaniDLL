@@ -41,7 +41,7 @@ Professional-grade API documentation included:
 
 1. Import `TaniDLL.bas` into VBA
 2. Run `Test_License`
-3. Run `TestSerial`
+3. Run `TaniDLL_AutoTest`
 
 Done.
 
