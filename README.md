@@ -51,7 +51,17 @@ Done.
 
 Get your license key from Gumroad:
 https://imomushi.gumroad.com/l/hwwpuz
+---
+## ⚡ Quick Setup (Recommended)
 
+> ⚠️ This quick test requires a compatible serial device.  
+> For the full test, use the provided ESP32 example program in `/examples`.
+
+1. Import `TaniDLL.bas` into VBA  
+2. Run `Test_License`  
+3. Run `TaniDLL_AutoTest`  
+
+Done.
 ---
 
 ### 2. Install DLL
