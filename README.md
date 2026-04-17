@@ -1,222 +1,125 @@
 # TaniDLL
 
-Easily control COM ports from Excel VBA (32/64-bit compatible).
-No complex setup required.
+TaniDLL is a Windows DLL that enables simple and stable serial communication (COM port) from Excel VBA and other languages.
 
 ---
 
-## 🔧 Overview
+## 💡 What You Can Do
 
-TaniDLL is a Windows DLL library that allows simple and reliable serial (COM port) communication from:
-
-* Excel VBA (32-bit / 64-bit)
-* Delphi
-* C/C++
-
-Designed for both beginners and engineers, including Arduino / ESP32 hobbyists.
-
----
-## 📦 Download
-
-Download DLL and sample files from this repository:
-
-- `/bin` → DLL files
-- `/vba` → VBA declarations
-- `/examples` → sample code
-
----
-## 📘 Documentation
-
-Professional-grade API documentation included:
-
-- Full function reference
-- Parameters & return values
-- Ready-to-use examples
-
-👉 [TaniDLL API Reference (PDF)](docs/TANI_DLL_specification_en.pdf)
+* Control Arduino / ESP32 from Excel VBA
+* Send and receive text data easily
+* Handle binary communication
+* Build simple automation tools with VBA
 
 ---
 
-## ⚡ Quick Setup (Recommended)
+## 📘 Full API Documentation
 
+Complete API reference (all functions, parameters, and examples):
 
-> ⚠️ This quick test requires a serial device.  
-> We recommend using the provided ESP32 example program in `/examples`.
+👉 [TaniDLL API Reference (PDF)](docs/TaniDLL_API_Reference_v1.0.pdf)
 
-### 🔌 Prepare Device
-
-Upload the sample program:
-
-👉 `/examples/TaniDLLCheckProgram/TaniDLL.ino`
+---
 
 ## 📂 Examples
 
 Start here:
 
-👉 `/examples/TaniDLLCheckProgram`  
-Full automatic test with ESP32
+👉 `/examples/TaniDLLCheckProgram`
+Full automatic test with ESP32 (recommended)
 
-👉 `/examples/SerialTest`  
-Simple send/receive example
+---
+
+## ⚡ Quick Setup (Recommended)
+
+> ⚠️ This quick test requires a serial device.
+> We recommend using the provided ESP32 example program.
+
+### 🔌 Prepare Device
+
+Upload the following program to your ESP32:
+
+👉 `/examples/TaniDLLCheckProgram/TaniDLL.ino.ino`
 
 ---
 
 ### ▶ Run Test
 
-1. Import `TaniDLL.bas` into VBA  
-2. Run `Test_License`  
-3. Run `TaniDLL_AutoTest`  
+1. Import `TaniDLL.bas` into VBA
+2. Run `Test_License`
+3. Run `TaniDLL_AutoTest`
 
 Done.
 
-## 🚀 Quick Start
-
-### 1. Purchase License
-
-Get your license key from Gumroad:
-https://imomushi.gumroad.com/l/hwwpuz
----
-## ⚡ Quick Setup (Recommended)
-
-> ⚠️ This quick test requires a compatible serial device.  
-> For the full test, use the provided ESP32 example program in `/examples`.
-
-1. Import `TaniDLL.bas` into VBA  
-2. Run `Test_License`  
-3. Run `TaniDLL_AutoTest`  
-
-Done.
 ---
 
-### 2. Install DLL
+## 🔧 Installation
 
-Copy the DLL to the Windows system folder:
+### Download
 
-* `TaniDLL32.dll` → `C:\Windows\SysWOW64`
-* `TaniDLL64.dll` → `C:\Windows\System32`
+Purchase license and download from:
+
+👉 https://imomushi.gumroad.com/l/hwwpuz
 
 ---
 
-### 3. VBA Declaration
+### DLL Placement
 
-```vba
-#If VBA7 Then
-    #If Win64 Then
-        Private Declare PtrSafe Function TANI_OpenSimple Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByVal name As String, _
-            ByVal BAUD As Long) As Long
-    
-        Private Declare PtrSafe Function TANI_OpenEx Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByVal name As String, _
-            ByVal BAUD As Long, _
-            ByVal databits As Long, _
-            ByVal parity As Long, _
-            ByVal stopbits As Long, _
-            ByVal flow As Long) As Long
-    
-        Private Declare PtrSafe Sub TANI_Close Lib "TaniDLL64.dll" ( _
-            ByVal id As Long)
-    
-        Private Declare PtrSafe Function TANI_SendText Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByVal txt As String, _
-            ByVal TERM As String) As Long
-    
-        Private Declare PtrSafe Function TANI_SendBytes Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByRef data As Byte, _
-            ByVal length As Long) As Long
-    
-        Private Declare PtrSafe Function TANI_RecvLine Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByRef buf As Byte, _
-            ByVal bufSize As Long, _
-            ByVal timeout As Long, _
-            ByVal TERM As Byte) As Long
-    
-        Private Declare PtrSafe Function TANI_RecvBytesUntil Lib "TaniDLL64.dll" _
-            (ByVal id As Long, _
-             ByRef buf As Byte, _
-             ByVal bufSize As Long, _
-             ByVal termByte As Byte, _
-             ByVal inclTerm As Long, _
-             ByVal timeout As Long) As Long
-             
-        Private Declare PtrSafe Function TANI_RecvBytes Lib "TaniDLL64.dll" ( _
-            ByVal id As Long, _
-            ByRef buf As Byte, _
-            ByVal size As Long, _
-            ByVal timeout As Long) As Long
-            
-        Private Declare PtrSafe Function TANI_CheckLicense Lib "TaniDLL64.dll" ( _
-         ByVal LicenseKey As String) As Long
-    #Else
-        ' 32bit版（省略）
-    #End If
-#End If
+#### Option 1 (Recommended)
+
+Place the DLL in the same folder as your Excel file.
+
+#### Option 2 (Advanced)
+
+Copy to system folder:
+
+* 32-bit → `C:\Windows\SysWOW64`
+* 64-bit → `C:\Windows\System32`
+
+---
+
+### VBA Setup
+
+Import:
+
+```id="y2i0xp"
+/vba/TaniDLL.bas
 ```
 
 ---
 
-### 4. Activate License（First time only）
+## 🔒 License
 
-⚠️ **Internet connection is required for license activation.**  
-License verification is performed via a remote server.
-
-After successful activation, the license is stored locally.  
-You do not need to activate it every time.
-```vba
-Sub Test_License()
-    Dim ret As Long
-    ret = TANI_CheckLicense("YOUR_LICENSE_KEY")
-    
-    If ret <> 1 Then
-        MsgBox "license error", vbCritical
-    End If
-End Sub
-```
-
-* This only needs to be done once when acquiring or renewing your license.
+* Internet connection is required for license activation
+* License verification is performed via a remote server
+* Activation is required only once (or when renewing)
+* After activation, the license is stored locally
 
 ---
 
-### 5. Serial Communication Example
+## 🚀 Quick Example
 
-```vba
+```vba id="ywnjgi"
 Sub TestSerial()
 
   Dim ret As Long
   Dim buf(255) As Byte
 
-  ' Open
   ret = TANI_OpenEx(0, "COM5", 115200, 8, 0, 1, 0)
   If ret <> 0 Then
     MsgBox "open error", vbCritical
     Exit Sub
   End If
 
-  ' Send
   ret = TANI_SendText(0, "HELLO", vbCr)
-  If ret <= 0 Then
-    MsgBox "send error", vbCritical
-    GoTo EXIT_PROC
-  End If
 
-  ' Receive
   ret = TANI_RecvLine(0, buf(0), 256, 2000, 13)
   If ret > 0 Then
     Dim s As String
     s = StrConv(buf, vbUnicode)
     MsgBox "Recv: " & Left(s, ret)
-  ElseIf ret = 0 Then
-    MsgBox "timeout"
-  Else
-    MsgBox "Recv error", vbCritical
   End If
 
-EXIT_PROC:
   TANI_Close 0
 
 End Sub
@@ -224,34 +127,22 @@ End Sub
 
 ---
 
-## 💡 Features
+## ⚠️ Notes
 
-* Easy COM port control from VBA
-* 32-bit / 64-bit support
-* Simple API design
-* Text and binary communication supported
-* Suitable for Arduino / ESP32 projects
-
----
-
-## ⚠️ Troubleshooting
-
-* **License error**
-  → Check your license key
-
-* **COM port open error**
-  → Verify COM port name (e.g., "COM5")
-
-* **No response**
-  → Check baud rate and device connection
+* Make sure to update COM port (e.g., COM5)
+* Baud rate must match your device (e.g., 115200)
+* Serial device must be connected before running
+* License activation requires internet connection
 
 ---
 
-## 🔒 License
+## 📄 License
 
-This software is proprietary and requires a valid subscription.
+This software is distributed under a proprietary license.
+Source code is not included.
 
-* Redistribution: Not allowed
-* Reverse engineering: Prohibited
+---
 
-© TANI-Lab. All rights reserved.
+## 👨‍💻 Author
+
+TANI-Lab
