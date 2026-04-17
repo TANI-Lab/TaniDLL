@@ -13,7 +13,7 @@ This folder contains VBA modules for using TaniDLL easily from Excel.
 
 Full API reference is available here:
 
-👉 [TaniDLL API Reference (PDF)](docs/TANI_DLL_specification_en.pdf)
+👉 [TaniDLL API Reference (PDF)](../docs/TANI_DLL_specification_en.pdf)
 
 ---
 
