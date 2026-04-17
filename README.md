@@ -1,5 +1,5 @@
 # TaniDLL
-
+Simple and reliable serial communication for Excel VBA.
 TaniDLL is a Windows DLL that enables simple and stable serial communication (COM port) from Excel VBA and other languages.
 
 ---
@@ -52,6 +52,15 @@ Upload the following program to your ESP32:
 Done.
 
 ---
+### ✅ Expected Result
+
+You should see messages like:
+
+[PASS] Open  
+[PASS] TextRecv  
+...
+
+---
 
 ## 🔧 Installation
 
@@ -60,6 +69,9 @@ Done.
 Purchase license and download from:
 
 👉 https://imomushi.gumroad.com/l/hwwpuz
+
+- Instant license key delivery
+- Subscription-based access
 
 ---
 
