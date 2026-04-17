@@ -23,6 +23,11 @@ Download DLL and sample files from this repository:
 - `/bin` → DLL files
 - `/vba` → VBA declarations
 - `/examples` → sample code
+## 📘 Documentation
+
+Full API reference is available here:
+
+👉 [TaniDLL API Reference (PDF)](docs/TANI_DLL_specification_en.pdf)
 
 ---
 
