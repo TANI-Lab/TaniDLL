@@ -39,9 +39,22 @@ Professional-grade API documentation included:
 
 ## ⚡ Quick Setup (Recommended)
 
-1. Import `TaniDLL.bas` into VBA
-2. Run `Test_License`
-3. Run `TaniDLL_AutoTest`
+> ⚠️ This quick test requires a serial device.  
+> We recommend using the provided ESP32 example program in `/examples`.
+
+### 🔌 Prepare Device
+
+Upload the sample program:
+
+👉 `/examples/TaniDLLCheckProgram/TaniDLL.ino`
+
+---
+
+### ▶ Run Test
+
+1. Import `TaniDLL.bas` into VBA  
+2. Run `Test_License`  
+3. Run `TaniDLL_AutoTest`  
 
 Done.
 
