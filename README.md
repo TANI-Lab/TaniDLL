@@ -39,6 +39,7 @@ Professional-grade API documentation included:
 
 ## ⚡ Quick Setup (Recommended)
 
+
 > ⚠️ This quick test requires a serial device.  
 > We recommend using the provided ESP32 example program in `/examples`.
 
@@ -47,6 +48,16 @@ Professional-grade API documentation included:
 Upload the sample program:
 
 👉 `/examples/TaniDLLCheckProgram/TaniDLL.ino`
+
+## 📂 Examples
+
+Start here:
+
+👉 `/examples/TaniDLLCheckProgram`  
+Full automatic test with ESP32
+
+👉 `/examples/SerialTest`  
+Simple send/receive example
 
 ---
 
