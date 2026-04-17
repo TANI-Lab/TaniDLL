@@ -16,6 +16,23 @@ TaniDLL is a Windows DLL library that allows simple and reliable serial (COM por
 Designed for both beginners and engineers, including Arduino / ESP32 hobbyists.
 
 ---
+## 📦 Download
+
+Download DLL and sample files from this repository:
+
+- `/bin` → DLL files
+- `/vba` → VBA declarations
+- `/examples` → sample code
+
+---
+
+## ⚡ Quick Setup (Recommended)
+
+1. Import `TaniDLL.bas` into VBA
+2. Run `Test_License`
+3. Run `TestSerial`
+
+Done.
 
 ## 🚀 Quick Start
 
