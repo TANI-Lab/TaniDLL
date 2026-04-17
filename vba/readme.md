@@ -25,7 +25,7 @@ In Excel VBA:
 
 1. Press `Alt + F11`
 2. Go to **File → Import File**
-3. Select `TaniDLL.bas`
+3. Select `SerialTest.bas`
 
 ---
 
