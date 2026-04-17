@@ -23,9 +23,15 @@ Download DLL and sample files from this repository:
 - `/bin` → DLL files
 - `/vba` → VBA declarations
 - `/examples` → sample code
+
+---
 ## 📘 Documentation
 
-Full API reference is available here:
+Professional-grade API documentation included:
+
+- Full function reference
+- Parameters & return values
+- Ready-to-use examples
 
 👉 [TaniDLL API Reference (PDF)](docs/TANI_DLL_specification_en.pdf)
 
