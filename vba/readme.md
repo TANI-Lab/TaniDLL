@@ -6,7 +6,7 @@ This folder contains VBA modules for using TaniDLL easily from Excel.
 
 ## 📦 Files
 
-* `TaniDLL.bas` → VBA declarations for all API functions
+* `SerialTest.bas` → VBA declarations for all API functions
 
 ---
 ## 📘 Documentation
