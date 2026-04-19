@@ -28,7 +28,7 @@ Basic send/receive example.
 
 ## 📊 Advanced Demo
 
-### 👉 RealTimeExcelLogger
+### 👉 Multi COM Ports　(RealTimeExcelLogger)
 
 Real-time data logging from multiple ESP32 devices into Excel.
 
