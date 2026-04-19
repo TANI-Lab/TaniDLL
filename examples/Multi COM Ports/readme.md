@@ -31,3 +31,7 @@ This is a demonstration project showing how to receive data from multiple ESP32 
 
 ## 🧩 System Configuration
 
+ESP32 #1 → COM5 ┐
+├→ TaniDLL → Excel VBA → Chart
+ESP32 #2 → COM17 ┘
+
