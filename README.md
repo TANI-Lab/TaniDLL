@@ -82,15 +82,13 @@ End Sub
 
 ## 📘 Documentation
 
-Full API reference:
-
-👉 [TaniDLL API Reference (PDF)](https://github.com/TANI-Lab/TaniDLL/blob/main/docs/TaniDLL_API_Reference_v1.0.pdf)
+👉 [TaniDLL API Reference (PDF)](docs/TaniDLL_API_Reference_v1.0.pdf)
 
 ---
 
 ## 📂 Examples
 
-👉 [TaniDLLCheckProgram](./examples/TaniDLLCheckProgram)
+👉 [TaniDLLCheckProgram](examples/TaniDLLCheckProgram)
 
 Includes full automatic test using ESP32
 
