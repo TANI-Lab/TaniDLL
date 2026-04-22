@@ -14,6 +14,17 @@ A stable multi-COM port communication DLL for Windows, designed to prevent commo
 
 ---
 
+## 🎥 Demo
+
+See TaniDLL in action (Excel + COM communication):
+
+▶ https://youtube.com/shorts/4sBXty-INws
+
+- Excel VBA Serial Communication Demo
+- Multi COM Port Control from Excel
+
+---
+
 ## ❗ Common Problems This Solves
 
 - Serial communication becomes unstable over time  
@@ -85,11 +96,12 @@ End Sub
 👉 [Download API Reference (PDF)](https://raw.githubusercontent.com/TANI-Lab/TaniDLL/main/docs/TANI_DLL_specification_en.pdf)
 
 *Note: The PDF may not render correctly on GitHub. Please download to view.*
+
 ---
 
 ## 📂 Examples
 
-👉 [TaniDLLCheckProgram](examples/TaniDLLCheckProgram)
+👉 [TaniDLLCheckProgram](https://github.com/TANI-Lab/TaniDLL/tree/main/examples/TaniDLLCheckProgram)
 
 Includes full automatic test using ESP32
 
@@ -99,7 +111,7 @@ Includes full automatic test using ESP32
 
 ### Download
 
-👉 [https://imomushi.gumroad.com/l/hwwpuz](https://imomushi.gumroad.com/l/ixdvo)
+👉 https://imomushi.gumroad.com/l/hwwpuz
 
 - Free version available (1 COM port)  
 - One-time purchase licenses (no subscription)  
@@ -113,15 +125,15 @@ Includes full automatic test using ESP32
   - 1 COM port  
   - For evaluation and personal use only  
 
-- **Personal License**  
+- **Personal License ($29)**  
   - Up to 2 COM ports  
-  - Non-commercial use only  
-👉[https://imomushi.gumroad.com/l/wbaiq](https://imomushi.gumroad.com/l/wbaiq)
+  - Non-commercial use only
+  - 👉[https://imomushi.gumroad.com/l/wbaiq](https://imomushi.gumroad.com/l/wbaiq)
 
-- **Business License**  
+- **Business License ($129)**  
   - Up to 16 COM ports  
-  - Commercial use allowed  
-👉[https://imomushi.gumroad.com/l/fzumby](https://imomushi.gumroad.com/l/fzumby)
+  - Commercial use allowed
+  - 👉[https://imomushi.gumroad.com/l/fzumby](https://imomushi.gumroad.com/l/fzumby)  
 
 ---
 
