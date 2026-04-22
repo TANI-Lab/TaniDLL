@@ -66,12 +66,21 @@ You should see messages like:
 
 ### Download
 
-Purchase license and download from:
+Download the DLL and purchase a license from:
 
 👉 https://imomushi.gumroad.com/l/hwwpuz
 
-- Instant license key delivery
-- Subscription-based access
+- Free version available (1 COM port)
+- One-time purchase licenses (no subscription)
+- Instant license key delivery via email
+
+---
+
+### License Options
+
+- **Free (Personal)**: 1 COM port (for evaluation and personal use)
+- **Personal License**: Up to 2 COM ports (non-commercial use only)
+- **Business License**: Up to 16 COM ports (commercial use allowed)
 
 ---
 
@@ -102,10 +111,19 @@ Import:
 
 ## 🔒 License
 
-* Internet connection is required for license activation
-* License verification is performed via a remote server
-* Activation is required only once (or when renewing)
-* After activation, the license is stored locally
+- A license key is required to use the DLL
+- License verification is performed via a remote server
+- Internet connection is required for activation
+- Activation is performed once per machine (HWID-based)
+- After activation, the license is stored locally
+
+---
+
+### Notes
+
+- Each license is valid for one hardware device (HWID)
+- If you change your hardware, reactivation may be required
+- For license transfer or reset, please contact support
 
 ---
 
