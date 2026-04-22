@@ -1,136 +1,58 @@
 # TaniDLL
-Simple and reliable serial communication for Excel VBA.
-TaniDLL is a Windows DLL that enables simple and stable serial communication (COM port) from Excel VBA and other languages.
+
+A stable multi-COM port communication DLL for Windows, designed to prevent common issues such as data loss, freezing, and unstable connections in Excel VBA and serial communication applications.
+
+---
+
+## 🚀 Why TaniDLL?
+
+- Stable communication even in long-running applications  
+- Reliable handling of multiple COM ports  
+- Simple API for fast integration  
+- Works seamlessly with Excel VBA  
+- Lightweight and easy to deploy  
+
+---
+
+## ❗ Common Problems This Solves
+
+- Serial communication becomes unstable over time  
+- Multiple COM ports cause unexpected behavior  
+- Reconnection logic is complex and error-prone  
+- Data loss occurs in long-running applications  
+
+---
+
+## 🎯 Who is this for?
+
+- Excel VBA developers working with serial devices  
+- Engineers controlling Arduino / ESP32 from Windows  
+- Developers building automation or measurement tools  
 
 ---
 
 ## 💡 What You Can Do
 
-* Control Arduino / ESP32 from Excel VBA
-* Send and receive text data easily
-* Handle binary communication
-* Build simple automation tools with VBA
+- Control Arduino / ESP32 from Excel VBA  
+- Send and receive text data easily  
+- Handle binary communication  
+- Build automation tools with VBA  
 
 ---
 
-## 📘 Full API Documentation
+## ⚡ Quick Start
 
-Complete API reference (all functions, parameters, and examples):
+> You can test with any serial device (USB-UART, Arduino, ESP32, etc.)
 
-👉 [TaniDLL API Reference (PDF)](docs/TaniDLL_API_Reference_v1.0.pdf)
+### 1. Import VBA Module
 
----
-
-## 📂 Examples
-
-Start here:
-
-👉 `/examples/TaniDLLCheckProgram`
-Full automatic test with ESP32 (recommended)
-
----
-
-## ⚡ Quick Setup (Recommended)
-
-> ⚠️ This quick test requires a serial device.
-> We recommend using the provided ESP32 example program.
-
-### 🔌 Prepare Device
-
-Upload the following program to your ESP32:
-
-👉 `/examples/TaniDLLCheckProgram/TaniDLL.ino.ino`
-
----
-
-### ▶ Run Test
-
-1. Import `TaniDLL.bas` into VBA
-2. Run `Test_License`
-3. Run `TaniDLL_AutoTest`
-
-Done.
-
----
-### ✅ Expected Result
-
-You should see messages like:
-
-[PASS] Open  
-[PASS] TextRecv  
-...
-
----
-
-## 🔧 Installation
-
-### Download
-
-Download the DLL and purchase a license from:
-
-👉 https://imomushi.gumroad.com/l/hwwpuz
-
-- Free version available (1 COM port)
-- One-time purchase licenses (no subscription)
-- Instant license key delivery via email
-
----
-
-### License Options
-
-- **Free (Personal)**: 1 COM port (for evaluation and personal use)
-- **Personal License**: Up to 2 COM ports (non-commercial use only)
-- **Business License**: Up to 16 COM ports (commercial use allowed)
-
----
-
-### DLL Placement
-
-#### Option 1 (Recommended)
-
-Place the DLL in the same folder as your Excel file.
-
-#### Option 2 (Advanced)
-
-Copy to system folder:
-
-* 32-bit → `C:\Windows\SysWOW64`
-* 64-bit → `C:\Windows\System32`
-
----
-
-### VBA Setup
-
-Import:
-
-```id="y2i0xp"
+```
 /vba/TaniDLL.bas
 ```
 
----
+### 2. Run Sample Code
 
-## 🔒 License
-
-- A license key is required to use the DLL
-- License verification is performed via a remote server
-- Internet connection is required for activation
-- Activation is performed once per machine (HWID-based)
-- After activation, the license is stored locally
-
----
-
-### Notes
-
-- Each license is valid for one hardware device (HWID)
-- If you change your hardware, reactivation may be required
-- For license transfer or reset, please contact support
-
----
-
-## 🚀 Quick Example
-This example sends "HELLO" and receives a response from the device.
-
-```vba id="ywnjgi"
+```vba
 Sub TestSerial()
 
   Dim ret As Long
@@ -158,18 +80,98 @@ End Sub
 
 ---
 
+## 📘 Documentation
+
+Full API reference:
+
+👉 docs/TaniDLL_API_Reference_v1.0.pdf
+
+---
+
+## 📂 Examples
+
+👉 /examples/TaniDLLCheckProgram  
+Includes full automatic test using ESP32
+
+---
+
+## 🔧 Installation
+
+### Download
+
+👉 [https://imomushi.gumroad.com/l/hwwpuz](https://imomushi.gumroad.com/l/ixdvo)
+
+- Free version available (1 COM port)  
+- One-time purchase licenses (no subscription)  
+- Instant license key delivery via email  
+
+---
+
+### License Options
+
+- **Free (Personal)**  
+  - 1 COM port  
+  - For evaluation and personal use only  
+
+- **Personal License**  
+  - Up to 2 COM ports  
+  - Non-commercial use only  
+👉[https://imomushi.gumroad.com/l/wbaiq](https://imomushi.gumroad.com/l/wbaiq)
+
+- **Business License**  
+  - Up to 16 COM ports  
+  - Commercial use allowed  
+👉[https://imomushi.gumroad.com/l/fzumby](https://imomushi.gumroad.com/l/fzumby)
+
+---
+
+### DLL Placement
+
+**Recommended**  
+Place the DLL in the same folder as your Excel file.
+
+**Alternative**  
+- 32-bit → C:\Windows\SysWOW64  
+- 64-bit → C:\Windows\System32  
+
+---
+
+## 🔒 License
+
+- A license key is required  
+- License verification is performed via a remote server  
+- Internet connection is required for activation  
+- Activation is performed once per machine (HWID-based)  
+- After activation, the license is stored locally  
+
+### Notes
+
+- Each license is valid for one hardware device (HWID)  
+- Hardware changes may require reactivation  
+- License reset is available via support  
+
+---
+
+## 🛡 Stability
+
+- Designed for continuous operation  
+- Suitable for production environments  
+- Multi-port communication ready  
+
+---
+
 ## ⚠️ Notes
 
-* Make sure to update COM port (e.g., COM5)
-* Baud rate must match your device (e.g., 115200)
-* Serial device must be connected before running
-* License activation requires internet connection
+- COM port must be correctly configured (e.g., COM5)  
+- Baud rate must match your device  
+- Device must be connected before execution  
+- Internet is required for initial activation  
 
 ---
 
 ## 📄 License
 
-This software is distributed under a proprietary license.
+This software is distributed under a proprietary license.  
 Source code is not included.
 
 ---
