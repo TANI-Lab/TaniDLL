@@ -82,8 +82,9 @@ End Sub
 
 ## 📘 Documentation
 
-👉 [TaniDLL API Reference (PDF)](docs/TaniDLL_API_Reference_v1.0.pdf)
+👉 [Download API Reference (PDF)](https://raw.githubusercontent.com/TANI-Lab/TaniDLL/main/docs/TANI_DLL_specification_en.pdf)
 
+*Note: The PDF may not render correctly on GitHub. Please download to view.*
 ---
 
 ## 📂 Examples
