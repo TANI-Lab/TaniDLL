@@ -113,7 +113,7 @@ Includes full automatic test using ESP32
 
 👉 https://imomushi.gumroad.com/l/hwwpuz
 
-- Free version available (1 COM port)  
+- Free version available (2 COM port)  
 - One-time purchase licenses (no subscription)  
 - Instant license key delivery via email  
 
@@ -122,11 +122,11 @@ Includes full automatic test using ESP32
 ### License Options
 
 - **Free (Personal)**  
-  - 1 COM port  
+  - 2 COM port  
   - For evaluation and personal use only  
 
 - **Personal License ($29)**  
-  - Up to 2 COM ports  
+  - Up to 4 COM ports  
   - Non-commercial use only
   - 👉[https://imomushi.gumroad.com/l/wbaiq](https://imomushi.gumroad.com/l/wbaiq)
 
