@@ -111,7 +111,7 @@ Includes full automatic test using ESP32
 
 ### Download
 
-👉 https://imomushi.gumroad.com/l/hwwpuz
+👉 [https://imomushi.gumroad.com/l/ixdvo](https://imomushi.gumroad.com/l/ixdvo)
 
 - Free version available (2 COM port)  
 - One-time purchase licenses (no subscription)  
