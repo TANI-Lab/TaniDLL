@@ -23,6 +23,25 @@ See TaniDLL in action (Excel + COM communication):
 - Excel VBA Serial Communication Demo
 - Multi COM Port Control from Excel
 
+📊 See also: Stability test (7+ days continuous operation)
+
+---
+
+## ⏱️ Stability Test
+
+The system has been running continuously for over 7 days with:
+
+- No memory leaks observed
+- Stable COM port communication
+- No data loss detected
+
+Test environment:
+- Multiple ESP32 devices (3 units)
+- Continuous real-time data logging
+- Excel VBA + TaniDLL
+
+Long-term testing is still ongoing and will be updated.
+
 ---
 
 ## ❗ Common Problems This Solves
