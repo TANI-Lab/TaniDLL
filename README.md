@@ -60,8 +60,39 @@ See TaniDLL in action (Excel + COM communication):
 ```
 /vba/TaniDLL.bas
 ```
+### 2.🔑 License Activation
 
-### 2. Run Sample Code
+Before using this software, you must activate your license.
+
+If the license is not activated, the COM port cannot be opened.
+
+```vba
+Sub CheckLicense()
+
+    Dim ret As Long
+
+    ' If you enter the wrong key 5 times within 5 minutes,
+    ' authentication will be locked for 1 hour.
+    ret = TANI_CheckLicense("YOUR_LICENSE_KEY")
+
+    Select Case ret
+        Case 1
+            Debug.Print "License OK"
+
+        Case 0
+            MsgBox "License authentication failed." & vbCrLf & _
+                   "Please check your license key."
+            Exit Sub
+
+        Case -1
+            MsgBox "Failed to connect to the server." & vbCrLf & _
+                   "Please check your network connection."
+            Exit Sub
+    End Select
+
+End Sub
+
+### 3. Run Sample Code
 
 ```vba
 Sub TestSerial()
@@ -155,6 +186,16 @@ Place the DLL in the same folder as your Excel file.
 - Internet connection is required for activation  
 - Activation is performed once per machine (HWID-based)  
 - After activation, the license is stored locally  
+
+---
+
+## ⚠️ Disclaimer
+
+This project is under active development and may contain bugs.
+
+The software is provided "as is" without any warranties. Please use it at your own risk.
+
+---
 
 ### Notes
 
