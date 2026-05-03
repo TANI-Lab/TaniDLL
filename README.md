@@ -24,6 +24,7 @@ See TaniDLL in action (Excel + COM communication):
 - Multi COM Port Control from Excel
 
 📊 See also: Stability test (7+ days continuous operation)
+▶ https://youtube.com/shorts/_t8AlGjcclY?feature=share
 
 ---
 
