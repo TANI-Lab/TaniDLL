@@ -182,7 +182,7 @@ Includes full automatic test using ESP32
   - Non-commercial use only
   - 👉[https://imomushi.gumroad.com/l/wbaiq](https://imomushi.gumroad.com/l/wbaiq)
 
-- **Business License ($129)**  
+- **Business License ($99)**  
   - Up to 16 COM ports  
   - Commercial use allowed
   - 👉[https://imomushi.gumroad.com/l/fzumby](https://imomushi.gumroad.com/l/fzumby)  
@@ -206,7 +206,16 @@ Place the DLL in the same folder as your Excel file.
 - License verification is performed via a remote server  
 - Internet connection is required for activation  
 - Activation is performed once per machine (HWID-based)  
-- After activation, the license is stored locally  
+- After activation, the license is stored locally
+
+This software may be used for both personal and commercial purposes.
+Redistribution is prohibited.
+
+A paid license is required for:
+
+Commercial product integration
+Removal of functional limitations
+Continuous business use
 
 ---
 
