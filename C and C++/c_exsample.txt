@@ -1,0 +1,46 @@
+#include "tani_dll.h"
+#include <stdio.h>
+
+int main() {
+
+    unsigned char buf[256];
+    int ret;
+
+    // License check
+    ret = TANI_CheckLicense("XXXXXXXX");
+    if (ret != 1) {
+        printf("License error\n");
+        return -1;
+    }
+
+    // Open COM port
+    ret = TANI_OpenEx(0, "COM5", 115200, 8, 0, 1, 0);
+    if (ret != 0) {
+        printf("Open failed\n");
+        return -1;
+    }
+
+    // Send data
+    ret = TANI_SendText(0, "HELLO", "\r");
+    if (ret <= 0) {
+        printf("Send failed\n");
+        TANI_Close(0);
+        return -1;
+    }
+
+    // Receive data
+    ret = TANI_RecvLine(0, buf, 256, 2000, 13);
+    if (ret > 0) {
+        buf[ret] = 0;
+        printf("Received: %s\n", buf);
+    } else if (ret == 0) {
+        printf("Timeout\n");
+    } else {
+        printf("Receive error\n");
+    }
+
+    // Close
+    TANI_Close(0);
+
+    return 0;
+}
